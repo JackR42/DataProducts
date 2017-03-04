@@ -1,0 +1,71 @@
+---
+title       : Body Mass Index
+subtitle    : BMI calculator
+author      : Jack Ar
+date        : March 2017
+job         : March 2017
+#transition  : rotate
+#transition-speed: fast
+#framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+#highlighter : highlight.js  # {highlight.js, prettify, highlight}
+#hitheme     : tomorrow      # 
+#widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+This application calculates the **Body Mass Index - BMI**.  
+
+### Input
+The input variables for the calculation are:
+* Weight in Kilograms
+* Height in Centimeters
+
+### Formula
+The BMI is calculated based on the formula Height divided by Weight squared, or:
+* Heigth / Weight ^ 2
+
+--- .class #id 
+
+## Calculation
+
+
+### Output
+Based on the input, the following output is determined:
+* Calculation of the Body Mass Index - BMI
+* The category for the BMI
+
+### Category
+The category for the BMI is determined:
+* Underweight
+* Normal (healthy weight)
+* Overweight 
+* Obese
+
+---
+
+## Example
+
+Here is an example of how the BMI is calculated:
+
+
+```{r, echo=TRUE}
+weight <- 78
+height <- 1.78
+bmi <- (weight / (height ^ 2))
+bmi
+```
+
+---
+
+## Reference
+
+The BMI application can be found here on ShinyApp.io:
+* https://jackr42.shinyapps.io/bmi42/
+
+The source code can be found here on Github:
+* http://github.com/srikanthkamineni/Developing-Data-Products
+* server.R
+* ```ui.R```
