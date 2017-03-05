@@ -1,0 +1,70 @@
+Body Mass Index
+========================================================
+author: Jack
+date: March 2017
+autosize: true
+
+
+Introduction
+========================================================
+
+This document describes the BMI application which calculates the **Body Mass Index - BMI** based on the following.
+
+
+### Input
+The input variables for the calculation are:
+* Weight in Kilograms
+* Height in Centimeters
+
+### Formula
+The BMI is calculated based on the formula Height divided by Weight squared, or:
+* Heigth / Weight ^ 2
+
+
+Results
+========================================================
+
+Based on the input, the following results are determined:
+
+### BMI value
+* The value of the Body Mass Index is calculated
+* The category of the Body Mass Index is determined
+
+### BMI Category
+The category for the BMI is determined as one of the following:
+* Underweight
+* Normal (healthy weight)
+* Overweight 
+* Obese
+
+
+Example calculation
+========================================================
+
+Here is an example of how the BMI is calculated:
+
+
+```{r, echo=TRUE}
+weight <- 78
+height <- 1.78
+bmi <- (weight / (height ^ 2))
+bmi
+```
+
+
+Reference
+========================================================
+
+This BMI Rpres presentation is published here on RPubs:
+* http://github.com/JackR42/BmiRpress
+
+The BMI application is published here on ShinyApps.io:
+* https://jackr42.shinyapps.io/bmi42/
+
+The BMI source code can be found here on Github:
+* https://github.com/JackR42/DataProducts
+* ```server.R```
+* ```ui.R```
+* ```bmi.Rpres```
+
+
