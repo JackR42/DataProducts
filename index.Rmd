@@ -4,12 +4,6 @@ subtitle    : BMI calculator
 author      : Jack Ar
 date        : March 2017
 job         : March 2017
-#transition  : rotate
-#transition-speed: fast
-#framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-#highlighter : highlight.js  # {highlight.js, prettify, highlight}
-#hitheme     : tomorrow      # 
-#widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -62,10 +56,16 @@ bmi
 
 ## Reference
 
-The BMI application can be found here on ShinyApp.io:
+This BMI slidify presentation is published here on RPubs:
+* http://github.com/JackR42/BmiSlidify
+
+The BMI application is published here on ShinyApps.io:
 * https://jackr42.shinyapps.io/bmi42/
 
 The source code can be found here on Github:
-* http://github.com/srikanthkamineni/Developing-Data-Products
-* server.R
+* https://github.com/JackR42/DataProducts
+* ```server.R```
 * ```ui.R```
+* ```index.Rmd```
+
+
