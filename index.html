@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Body Mass Index</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Body Mass Index">
+  <meta name="author" content="Jack Ar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Body Mass Index</h1>
+    <h2>BMI calculator</h2>
+    <p>Jack Ar<br/>March 2017</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application calculates the <strong>Body Mass Index - BMI</strong>.  </p>
+
+<h3>Input</h3>
+
+<p>The input variables for the calculation are:</p>
+
+<ul>
+<li>Weight in Kilograms</li>
+<li>Height in Centimeters</li>
+</ul>
+
+<h3>Formula</h3>
+
+<p>The BMI is calculated based on the formula Height divided by Weight squared, or:</p>
+
+<ul>
+<li>Heigth / Weight ^ 2</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Calculation</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Output</h3>
+
+<p>Based on the input, the following output is determined:</p>
+
+<ul>
+<li>Calculation of the Body Mass Index - BMI</li>
+<li>The category for the BMI</li>
+</ul>
+
+<h3>Category</h3>
+
+<p>The category for the BMI is determined:</p>
+
+<ul>
+<li>Underweight</li>
+<li>Normal (healthy weight)</li>
+<li>Overweight </li>
+<li>Obese</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here is an example of how the BMI is calculated:</p>
+
+<pre><code class="r">weight &lt;- 78
+height &lt;- 1.78
+bmi &lt;- (weight / (height ^ 2))
+bmi
+</code></pre>
+
+<pre><code>## [1] 24.6181
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Reference</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The BMI application can be found here on ShinyApp.io:</p>
+
+<ul>
+<li><a href="https://jackr42.shinyapps.io/bmi42/">https://jackr42.shinyapps.io/bmi42/</a></li>
+</ul>
+
+<p>The source code can be found here on Github:</p>
+
+<ul>
+<li><a href="http://github.com/srikanthkamineni/Developing-Data-Products">http://github.com/srikanthkamineni/Developing-Data-Products</a></li>
+<li>server.R</li>
+<li><code>ui.R</code></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Calculation'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Reference'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
